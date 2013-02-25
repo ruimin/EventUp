@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EventUp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="ibdesc">image button desc</string>
+    <string name="title_activity_browse_main">BrowseMainActivity</string>
+    <string name="today_event_list_title">--Today\'s events--</string>
+    <string name="title_activity_browse_by_date">BrowseByDateActivity</string>
+    <string name="sort_by_college">Sort by College</string>
+    <string name="sort_by_category">Sort by Category</string>
+    <string name="title_activity_browse_by_date_sort_by_college">BrowseByDateSortByCollegeActivity</string>
+    <string name="category_pic">picture of the category</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_event_detail">EventDetailActivity</string>
+    <string name="sepeartor">sepeartor</string>
+    <string name="title_activity_browse_by_date_tabs">BrowseByDateTabsActivity</string>
+    <string name="title_activity_try_tab">TryTabActivity</string>
+    <string name="title_activity_browse_by_date_sort_by_category">BrowseByDateSortByCategoryActivity</string>
+    <string name="title_activity_browse_by_college_choose_college">BrowseByCollegeChooseCollegeActivity</string>
+    <string name="title_activity_browse_by_category_choose_category">BrowseByCategoryChooseCategoryActivity</string>
+    <string name="event_subject_title">(Event Title)</string>
+    <string name="event_location_text">(Event location)</string>
+    <string name="event_time_text">(Event time)</string>
+    <string name="event_description">(Event description)</string>
+    <string name="title_activity_browse_by_college_tabs">BrowseByCollegeTabsActivity</string>
+    <string name="title_activity_browse_by_college_sort_by_category">BrowseByCollegeSortByCategoryActivity</string>
+    <string name="title_activity_browse_by_college_sort_by_date">BrowseByCollegeSortByDateActivity</string>
+    <string name="title_activity_browse_by_category_tabs">BrowseByCategoryTabsActivity</string>
+    <string name="title_activity_browse_by_category_sort_by_college">BrowseByCategorySortByCollegeActivity</string>
+    <string name="title_activity_browse_by_category_sort_by_date">BrowseByCategorySortByDateActivity</string>
+    <string name="event_detail_event_description_url">event_url</string>
+    <string name="event_detail_event_category">event_category</string>
+
+</resources>

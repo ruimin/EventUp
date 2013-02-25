@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/StarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/ibdesc"
+            android:onClick="goToBrowse"
+            android:src="@drawable/star_gold_32" />
+
+        <TextView
+            android:id="@+id/event_detail_event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/event_subject_title"
+            android:textSize="20sp"
+            tools:context=".EventDetailActivity" />
+    </RelativeLayout>
+
+    <!-- /RalativeLayout -->
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:contentDescription="@string/sepeartor"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/blue_separator" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/event_detail_event_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event_location_text"
+                tools:context=".EventDetailActivity" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:contentDescription="@string/sepeartor"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/blue_separator" />
+
+            <TextView
+                android:id="@+id/event_detail_event_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event_location_text"
+                tools:context=".EventDetailActivity" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:contentDescription="@string/sepeartor"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/blue_separator" />
+
+            <TextView
+                android:id="@+id/event_detail_event_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event_time_text"
+                tools:context=".EventDetailActivity" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:contentDescription="@string/sepeartor"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/blue_separator" />
+
+            <TextView
+                android:id="@+id/event_detail_event_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event_description"
+                tools:context=".EventDetailActivity" />
+
+            <WebView
+                android:id="@+id/event_detail_event_description_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:contentDescription="@string/sepeartor"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/blue_separator" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

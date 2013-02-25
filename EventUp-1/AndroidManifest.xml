@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fivecollege.eventup"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.fivecollege.eventup.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.BrowseEventsMainActivity"
+            android:label="@string/title_activity_browse_main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byDate.BrowseByDateChooseDateActivity"
+            android:label="@string/title_activity_browse_by_date" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.BrowseEventsMainActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byDate.BrowseByDateSortByCollegeActivity"
+            android:label="@string/title_activity_browse_by_date_sort_by_college" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.BrowseByDateActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.EventDetailActivity"
+            android:label="@string/title_activity_event_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byDate.BrowseByDateTabsActivity"
+            android:label="@string/title_activity_browse_by_date_tabs" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.BrowseByDateChooseDateActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.TryTabActivity"
+            android:label="@string/title_activity_try_tab" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byDate.BrowseByDateSortByCategoryActivity"
+            android:label="@string/title_activity_browse_by_date_sort_by_category" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.BrowseByDateTabsActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byCollege.BrowseByCollegeChooseCollegeActivity"
+            android:label="@string/title_activity_browse_by_college_choose_college" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.BrowseEventsMainActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byCategory.BrowseByCategoryChooseCategoryActivity"
+            android:label="@string/title_activity_browse_by_category_choose_category" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.BrowseEventsMainActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byCollege.BrowseByCollegeTabsActivity"
+            android:label="@string/title_activity_browse_by_college_tabs"
+            android:parentActivityName="com.fivecollege.eventup.browseEvents.byCollege.BrowseByCollegeChooseCollegeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.browseEvents.byCollege.BrowseByCollegeChooseCollegeActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byCollege.BrowseByCollegeSortByCategoryActivity"
+            android:label="@string/title_activity_browse_by_college_sort_by_category"
+            android:parentActivityName="com.fivecollege.eventup.browseEvents.byCollege.BrowseByCollegeTabsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.browseEvents.byCollege.BrowseByCollegeTabsActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byCollege.BrowseByCollegeSortByDateActivity"
+            android:label="@string/title_activity_browse_by_college_sort_by_date"
+            android:parentActivityName="com.fivecollege.eventup.browseEvents.byCollege.BrowseByCollegeTabsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.browseEvents.byCollege.BrowseByCollegeTabsActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byCategory.BrowseByCategoryTabsActivity"
+            android:label="@string/title_activity_browse_by_category_tabs"
+            android:parentActivityName="com.fivecollege.eventup.browseEvents.BrowseEventsMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.browseEvents.BrowseEventsMainActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byCategory.BrowseByCategorySortByCollegeActivity"
+            android:label="@string/title_activity_browse_by_category_sort_by_college"
+            android:parentActivityName="com.fivecollege.eventup.browseEvents.byCategory.BrowseByCategoryTabsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.browseEvents.byCategory.BrowseByCategoryTabsActivity" />
+        </activity>
+        <activity
+            android:name="com.fivecollege.eventup.browseEvents.byCategory.BrowseByCategorySortByDateActivity"
+            android:label="@string/title_activity_browse_by_category_sort_by_date"
+            android:parentActivityName="com.fivecollege.eventup.browseEvents.byCategory.BrowseByCategoryTabsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fivecollege.eventup.browseEvents.byCategory.BrowseByCategoryTabsActivity" />
+        </activity>
+    </application>
+
+</manifest>
